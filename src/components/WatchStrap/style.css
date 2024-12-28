@@ -1,0 +1,33 @@
+.watch-background {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-46-titanium-natural-cell-s10_VW_PF+watch-face-46-titanium-natural-s10_VW_PF?wid=1000&hei=1000&fmt=png-alpha&.v=VkZ1UEhBSWJYcW8vU2JKY0dsSEFqdVRaQzNERGRFYWpOR2ZYa2tEblo3UFZicVRRN09oTDNPbVJoakNOdFBsL3NqLzlHdDZiZk5mQ3ZsSjZIUUJtOVQzcnNWTHRlNVlONzMza21GaTAwQVVFV3ZkVVErQ2lxQjUvY3lWaGtLb0N0ellxUDB4dVliN1NPTHhYUld4M0p5am05N0NVWnlUTTNBaW9WT3lDS2lvbmYzRTFGU1cyNFdtdUoxcXBXVFAv"); /* Use the strap image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.case-carousel-item.strap-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  position: relative;
+  z-index: -1;
+}
+
+.case-carousel-item.strap-prev {
+  opacity: 1;
+  top: 5px;
+  transform: translateX(-120%) scale(1);
+  z-index: -1;
+}
+
+.case-carousel-item.strap-next {
+  opacity: 1;
+  top: 5px;
+  transform: translateX(120%) scale(1);
+  z-index: -1;
+}

@@ -1,0 +1,130 @@
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.strap-background {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MYA33ref_SR_S10_VW_PF?wid=1000&hei=1000&fmt=p-jpg&qlt=95&.v=czdWc1FNWHZRRGZrVTlpcjVQTEJxVHVkcStXUmxwTmtpV2dxUWV1ZU5xeXkvYVhHUzZnbTdlRlQ4aGhRUUYyVXZ6RVMwQXJHUjF3MlcvZ3RFeXhMRDVzaDNYQm9FT2pIMkdXYzlEUEliVWM"); /* Use the strap image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-container-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  padding-left: 0;
+}
+
+.case-arrow-button {
+  font-size: 30px;
+  padding: 6px 18px 10px 20px;
+  background-color: lightgrey;
+  color: grey;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+  width: 10%;
+  top: 10px;
+}
+
+.desc {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.watch-case-description-container {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.case-arrow-button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.case-carousel {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  position: relative;
+}
+
+.case-carousel-item {
+  flex: 0 0 33.33%;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+  position: absolute;
+}
+
+.case-carousel-item p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.case-carousel-item.case-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  position: relative;
+  z-index: 2;
+}
+
+.case-carousel-item.case-prev {
+  opacity: 1;
+  top: 5px;
+  transform: translateX(-120%) scale(1);
+  z-index: 1;
+}
+
+.case-carousel-item.case-next {
+  opacity: 1;
+  top: 5px;
+  transform: translateX(120%) scale(1);
+  z-index: 1;
+}
+
+.case-carousel-item.case-hidden {
+  display: none;
+}
+
+.case-left-arrow {
+  margin-right: 10px;
+  width: max-content;
+  top: 10px;
+}
+
+.case-right-arrow {
+  margin-left: 10px;
+  width: max-content;
+  top: 10px;
+}
+
+.case-arrow-button:focus {
+  outline: none;
+}

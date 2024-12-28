@@ -1,0 +1,128 @@
+.main-container {
+  width: 100vw;
+}
+
+.home-container {
+  padding: 12px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details {
+  margin-bottom: 15px;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.name {
+  font-weight: normal;
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 6px;
+  line-height: 1.1;
+}
+
+.get-started {
+  background-color: rgb(16, 127, 237);
+  color: white;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: larger;
+}
+
+.home-watch-container {
+  min-height: 400px;
+  max-height: 550px;
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image {
+  bottom: -380px;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: bottom 1s ease;
+}
+
+.image.move-up {
+  bottom: -50%;
+  transform: translate(0, -50%);
+}
+
+.top-image {
+  position: absolute;
+}
+
+.strap-image {
+  z-index: -2;
+  height: auto;
+}
+
+.side-view-btn {
+  color: #06c;
+  margin-bottom: 12px;
+  text-decoration: underline;
+  vertical-align: top;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.watch-details-container {
+  text-align: center;
+}
+
+.watch-name {
+  color: #6e6e73;
+  font-weight: 600;
+  margin: 4px;
+  font-size: small;
+}
+
+.watch-description {
+  color: #1d1d1f;
+  font-weight: 600;
+  margin: 6px;
+}
+
+.btns-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.button {
+  background-color: lightgrey;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 0;
+  font-size: medium;
+  font-weight: normal;
+  margin: 5px 15px;
+  transition: width 0.5s ease-in-out;
+  width: auto;
+}
+
+.svg {
+  margin-top: 4px;
+}
+
+.txt {
+  background-color: transparent;
+  margin-top: 0;
+  border: 0;
+  padding-top: 0;
+}
+
+.animated {
+  transition: all 0.2s ease-in-out;
+}

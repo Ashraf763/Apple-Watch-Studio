@@ -1,0 +1,51 @@
+.watch-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.watches-container {
+  display: flex;
+}
+
+.home-watch-container-2 {
+  min-height: 400px;
+  max-height: 550px;
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.arrow-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  color: #007aff;
+}
+
+.watch-details {
+  margin-top: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 5px 50px;
+}
+
+.carousel-wrapper {
+  width: 80%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
